@@ -87,7 +87,12 @@
           animate();
         });
     }
-    init();
+      console.log("Hello, world2!");
+      function animate() {
+        renderer.render(scene,camera);
+        requestAnimationFrame(animate);
+      }
+      init();
     </script>
     
     
